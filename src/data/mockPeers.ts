@@ -1,0 +1,153 @@
+import { PeerUser } from '../types';
+
+export const MOCK_PEERS: PeerUser[] = [
+  {
+    id: 'peer-1',
+    displayName: 'Aarav',
+    avatarId: 'avatar-1',
+    state: 'Karnataka',
+    region: 'South India',
+    englishLevel: 'Intermediate',
+    interests: ['Technology', 'Cinema', 'Interviews'],
+    preferredModes: ['casual', 'interview', 'knowledge'],
+    trustedBadge: true,
+    bioTagline: 'Practicing for upcoming tech campus placements with peers.',
+    status: 'ready',
+    accentNote: 'South Indian English — steady and polite cadence'
+  },
+  {
+    id: 'peer-2',
+    displayName: 'Sneha',
+    avatarId: 'avatar-2',
+    state: 'Maharashtra',
+    region: 'West India',
+    englishLevel: 'Basic',
+    interests: ['Daily life', 'Hobbies', 'Travel'],
+    preferredModes: ['casual', 'random'],
+    trustedBadge: true,
+    bioTagline: 'Overcoming stage fright, love friendly casual chats.',
+    status: 'ready',
+    accentNote: 'Western Indian English — friendly and expressive'
+  },
+  {
+    id: 'peer-3',
+    displayName: 'Rohan',
+    avatarId: 'avatar-3',
+    state: 'Delhi',
+    region: 'North India',
+    englishLevel: 'Comfortable',
+    interests: ['Current affairs', 'Debate', 'Interviews'],
+    preferredModes: ['debate', 'interview', 'knowledge'],
+    trustedBadge: true,
+    bioTagline: 'Preparing for civil services interviews, eager to discuss ideas.',
+    status: 'ready',
+    accentNote: 'North Indian English — clear and conversational'
+  },
+  {
+    id: 'peer-4',
+    displayName: 'Ananya',
+    avatarId: 'avatar-4',
+    state: 'Telangana',
+    region: 'South India',
+    englishLevel: 'Intermediate',
+    interests: ['Food', 'College life', 'Technology'],
+    preferredModes: ['casual', 'knowledge', 'challenge'],
+    trustedBadge: true,
+    bioTagline: 'Engineering final year student from Hyderabad.',
+    status: 'ready',
+    accentNote: 'Deccan South English — warm and lively tone'
+  },
+  {
+    id: 'peer-5',
+    displayName: 'Priyan',
+    avatarId: 'avatar-5',
+    state: 'Kerala',
+    region: 'South India',
+    englishLevel: 'Comfortable',
+    interests: ['Environment', 'Travel', 'Literature'],
+    preferredModes: ['casual', 'knowledge', 'debate'],
+    trustedBadge: true,
+    bioTagline: 'Love discussing travel stories and nature conservation.',
+    status: 'ready',
+    accentNote: 'Kerala English — articulate and gentle pace'
+  },
+  {
+    id: 'peer-6',
+    displayName: 'Meera',
+    avatarId: 'avatar-6',
+    state: 'Rajasthan',
+    region: 'West India',
+    englishLevel: 'Beginner',
+    interests: ['Hobbies', 'Music', 'Daily life'],
+    preferredModes: ['casual', 'random', 'challenge'],
+    trustedBadge: true,
+    bioTagline: 'First time practicing with strangers. Gentle patience appreciated!',
+    status: 'ready',
+    accentNote: 'Rajasthani English — soft-spoken and humble'
+  },
+  {
+    id: 'peer-7',
+    displayName: 'Tenzin',
+    avatarId: 'avatar-7',
+    state: 'Sikkim',
+    region: 'Northeast India',
+    englishLevel: 'Intermediate',
+    interests: ['Travel', 'Music', 'Science'],
+    preferredModes: ['casual', 'knowledge'],
+    trustedBadge: true,
+    bioTagline: 'Connecting with friends from across the country from Gangtok.',
+    status: 'ready',
+    accentNote: 'Northeast English — rhythmic, clear diction'
+  },
+  {
+    id: 'peer-8',
+    displayName: 'Ishaan',
+    avatarId: 'avatar-8',
+    state: 'West Bengal',
+    region: 'East India',
+    englishLevel: 'Advanced',
+    interests: ['Movies', 'Debate', 'College life'],
+    preferredModes: ['debate', 'casual', 'knowledge'],
+    trustedBadge: true,
+    bioTagline: 'Literature graduate passionate about cinema and debates.',
+    status: 'ready',
+    accentNote: 'Eastern English — rich vocabulary and melodic cadence'
+  },
+  {
+    id: 'peer-9',
+    displayName: 'Divya',
+    avatarId: 'avatar-9',
+    state: 'Uttar Pradesh',
+    region: 'North India',
+    englishLevel: 'Basic',
+    interests: ['Interviews', 'Education', 'Daily life'],
+    preferredModes: ['interview', 'casual', 'challenge'],
+    trustedBadge: true,
+    bioTagline: 'Bank exam aspirant practicing spoken fluency without hesitation.',
+    status: 'ready',
+    accentNote: 'Hindi belt English — thoughtful and striving'
+  },
+  {
+    id: 'peer-10',
+    displayName: 'Rahul',
+    avatarId: 'avatar-10',
+    state: 'Gujarat',
+    region: 'West India',
+    englishLevel: 'Intermediate',
+    interests: ['Business', 'Technology', 'Travel'],
+    preferredModes: ['casual', 'knowledge', 'interview'],
+    trustedBadge: true,
+    bioTagline: 'Commerce graduate learning to negotiate in global business English.',
+    status: 'ready',
+    accentNote: 'Gujarati English — energetic and pragmatic'
+  }
+];
+
+export const AVATAR_OPTIONS = [
+  { id: 'avatar-1', label: 'Teal Meadow', bg: 'bg-teal-500', text: 'white', initial: 'A' },
+  { id: 'avatar-2', label: 'Warm Amber', bg: 'bg-amber-500', text: 'white', initial: 'S' },
+  { id: 'avatar-3', label: 'Indigo Sky', bg: 'bg-indigo-500', text: 'white', initial: 'R' },
+  { id: 'avatar-4', label: 'Rose Coral', bg: 'bg-rose-500', text: 'white', initial: 'P' },
+  { id: 'avatar-5', label: 'Emerald Pine', bg: 'bg-emerald-600', text: 'white', initial: 'K' },
+  { id: 'avatar-6', label: 'Violet Dawn', bg: 'bg-violet-500', text: 'white', initial: 'M' }
+];

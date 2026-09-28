@@ -1,0 +1,6 @@
+{
+  "name": "SpeakCircle",
+  "description": "1-to-1 English practice platform for India. Speak without fear, practice without judgment in a safe, private voice room.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
