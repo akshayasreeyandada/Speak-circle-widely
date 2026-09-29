@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, UserCheck } from 'lucide-react';
+import { ShieldCheck, UserCheck, Bot } from 'lucide-react';
 import { UserProfile } from '../types';
 
 interface NavbarProps {
@@ -70,7 +70,16 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Zone 3: Primary actions & safety */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
+          <button
+            onClick={() => window.openSpeakCircleAiChat?.()}
+            title="Chat with n8n AI Coach"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-teal-800 bg-teal-50 hover:bg-teal-100 border border-teal-200/80 rounded-lg transition-all"
+          >
+            <Bot className="w-3.5 h-3.5 text-teal-600" />
+            <span className="hidden sm:inline">AI Coach</span>
+          </button>
+
           <button
             onClick={onOpenSafety}
             title="Safety Center & Guidelines"

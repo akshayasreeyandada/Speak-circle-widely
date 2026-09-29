@@ -19,6 +19,7 @@ import { OnboardingModal } from './components/OnboardingModal';
 import { SafetyCenterModal } from './components/SafetyCenterModal';
 import { ReportModal } from './components/ReportModal';
 import { AdminDashboard } from './components/AdminDashboard';
+import { N8nChatWidget } from './components/N8nChatWidget';
 import {
   UserProfile,
   PeerUser,
@@ -368,6 +369,9 @@ export default function App() {
         }}
         initialUser={currentUser}
       />
+
+      {/* n8n AI English Practice Chatbot Widget */}
+      <N8nChatWidget isInCall={activeSession !== null && activeSession.status === 'active'} />
     </div>
   );
 }

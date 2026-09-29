@@ -48,3 +48,56 @@
 .animate-ripple {
   animation: ripple-audio 1.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+
+/* n8n Chat Widget Custom Theming & Responsive Placement */
+:root {
+  --chat--color-primary: #0d9488;
+  --chat--color-primary-shade-50: #0f766e;
+  --chat--color-primary-shade-100: #115e59;
+  --chat--color-secondary: #0f766e;
+  --chat--color-dark: #0f172a;
+  --chat--color-light: #ffffff;
+  --chat--color-typing: #0d9488;
+  --chat--border-radius: 16px;
+  --chat--window--width: 380px;
+  --chat--window--height: 560px;
+  --chat--header--background: #0d9488;
+  --chat--header--color: #ffffff;
+  --chat--toggle--background: #0d9488;
+  --chat--toggle--hover--background: #0f766e;
+  --chat--toggle--active--background: #115e59;
+  --chat--toggle--color: #ffffff;
+}
+
+/* Position n8n chat toggle cleanly above the mobile bottom navigation bar */
+.chat-window-wrapper,
+.chat-window-toggle,
+.chat-toggle-button,
+[class*="chat-window-toggle"],
+[class*="chat-toggle"] {
+  bottom: 84px !important;
+  right: 16px !important;
+  z-index: 40 !important;
+}
+
+@media (min-width: 768px) {
+  .chat-window-wrapper,
+  .chat-window-toggle,
+  .chat-toggle-button,
+  [class*="chat-window-toggle"],
+  [class*="chat-toggle"] {
+    bottom: 24px !important;
+    right: 24px !important;
+  }
+}
+
+/* Hide chat widget during 1-to-1 active voice calls for distraction-free speaking */
+body.in-call .chat-window-wrapper,
+body.in-call .chat-window-toggle,
+body.in-call .chat-toggle-button,
+body.in-call [class*="chat-window-toggle"],
+body.in-call [class*="chat-toggle"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+

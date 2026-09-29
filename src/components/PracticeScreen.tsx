@@ -7,7 +7,9 @@ import {
   CheckCircle2,
   Clock,
   Shuffle,
-  Volume2
+  Volume2,
+  Bot,
+  MessageSquare
 } from 'lucide-react';
 import { DAILY_CHALLENGES } from '../data/challenges';
 import { CONVERSATION_TOPICS } from '../data/topics';
@@ -161,6 +163,35 @@ export const PracticeScreen: React.FC<PracticeScreenProps> = ({ onStartChallenge
                 <span>{warmupDone ? 'Try Again' : 'Start 60s Warmup'}</span>
               </>
             )}
+          </button>
+        </div>
+      </div>
+
+      {/* n8n AI English Practice Partner Card */}
+      <div className="bg-gradient-to-r from-teal-50 via-emerald-50/50 to-slate-50 border border-teal-200/80 rounded-2xl p-5 shadow-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <Bot className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-bold text-slate-900">AI Practice Chatbot</h3>
+                <span className="text-[10px] uppercase font-bold tracking-wider bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">
+                  Powered by n8n
+                </span>
+              </div>
+              <p className="text-xs text-slate-600 mt-0.5">
+                Practice interview answers, test questions, or chat without stage fright before calling peers.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => window.openSpeakCircleAiChat?.()}
+            className="px-4 py-2.5 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all shadow-xs shrink-0 hover:scale-102"
+          >
+            <MessageSquare className="w-3.5 h-3.5" />
+            <span>Chat with AI Coach</span>
           </button>
         </div>
       </div>

@@ -11,7 +11,8 @@ import {
   Clock,
   ArrowRight,
   ShieldCheck,
-  CheckCircle2
+  CheckCircle2,
+  Bot
 } from 'lucide-react';
 import { ConversationMode, RegionPreference, ConversationDuration, UserProfile } from '../types';
 import { DAILY_CHALLENGES } from '../data/challenges';
@@ -215,6 +216,17 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             <ShieldCheck className="w-3.5 h-3.5 text-teal-600" />
             <span>Speak without fear. No personal contact details will ever be shown.</span>
           </p>
+
+          <div className="mt-3 flex items-center justify-center">
+            <button
+              type="button"
+              onClick={() => window.openSpeakCircleAiChat?.()}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-teal-800 bg-teal-50 hover:bg-teal-100 border border-teal-200/80 transition-all hover:scale-102"
+            >
+              <Bot className="w-3.5 h-3.5 text-teal-600" />
+              <span>Nervous? Warm up with our n8n AI Coach first</span>
+            </button>
+          </div>
         </div>
       </div>
 
